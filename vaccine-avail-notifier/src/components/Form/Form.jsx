@@ -32,7 +32,7 @@ const Form = () => {
 	const handleClick = async (e) => {
 		e.preventDefault();
 		axios
-			.post(`http://localhost:4000/addTask`, {
+			.post(`https://vaccine-avail-notifier.herokuapp.com/addTask`, {
 				...values,
 			})
 			.then((res) => {
