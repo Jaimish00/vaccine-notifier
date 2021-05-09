@@ -1,0 +1,91 @@
+.Form_Wrapper {
+	border: 1px solid var(--secondary-color);
+	border-radius: 10px;
+	width: 100%;
+	padding: 24px 48px;
+	// height: 80%;
+
+	.Form_Control {
+		margin: 0 auto;
+		padding: 6px 12px;
+		margin-bottom: 10px;
+		width: 70%;
+		height: 100px;
+
+		&:first-of-type {
+			margin-top: 60px;
+		}
+
+		&:last-of-type {
+			margin-bottom: 60px;
+		}
+
+		label {
+			color: var(--secondary-color);
+			display: block;
+		}
+
+		span {
+			display: inline-block;
+			margin-top: 10px;
+			font-size: 0.7rem;
+		}
+
+		&.Age {
+			margin-top: 30px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #f25f4c;
+
+			&:hover {
+				border-bottom: 1px solid #f25f4c;
+			}
+		}
+
+		input {
+			outline: none;
+			background: none;
+			width: 100%;
+
+			border: 1px solid (var(--secondary-color));
+			padding: 12px 6px;
+			border-radius: 5px;
+			color: var(--secondary-color);
+		}
+
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		textarea:-webkit-autofill,
+		textarea:-webkit-autofill:hover,
+		textarea:-webkit-autofill:focus,
+		select:-webkit-autofill,
+		select:-webkit-autofill:hover,
+		select:-webkit-autofill:focus {
+			-webkit-text-fill-color: var(--secondary-color);
+			-webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+			transition: background-color 5000s ease-in-out 0s;
+		}
+
+		button {
+			border: 1px solid var(--btn-bg-color);
+			border-radius: 5px;
+			background: transparent;
+			padding: 12px 24px;
+			cursor: pointer;
+			color: var(--btn-bg-color);
+			width: 100%;
+			margin-top: 60px;
+			transition: all 0.2s linear;
+
+			&:hover,
+			&:focus {
+				background: var(--btn-bg-color);
+				box-shadow: 0px 0px 1px 1px var(--btn-bg-color);
+				color: var(--primary-color);
+			}
+		}
+	}
+}
